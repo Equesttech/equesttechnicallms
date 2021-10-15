@@ -24,7 +24,10 @@
             <div class=" col-md-8 col-md-10 mx-auto">
                 <div class="site-heading">
                     <h3 class=" site-heading my-4 mt-3 text-black align-left" > Welcome to Equestech </h3>
-                    <p class="text-black">Equestech.ng is an educational site providing content on Python programming and web development to all the programmers and budding programmers across the internet. The main goal of this site is to provide quality tips, tricks, hacks, and other Programming resources that allows beginners to improve their skills.
+                    <p class="text-black">Equestech.ng is an educational site providing content on Python programming,
+                        Data Science and Machine Learning to all the programmers and budding programmers
+                        across the internet. The main goal of this site is to provide quality tips,
+                        tricks, hacks, and other Programming resources that allows beginners to improve their skills.
                     </p>
                 </div>
             </div>
@@ -37,7 +40,7 @@
         <div class="col-md-8 mt-3 left">
             {% for post in videos %}
                 <iframe width="871" height="490"
-                        src="{{ post.url }}"
+                        src="https://www.youtube.com/embed/{{ post.url }}"
                         title="{{post.title}}"
                         frameborder="0"
                         allow="accelerometer;

@@ -102,6 +102,18 @@
                                 <i class="flaticon-bar-chart-1"></i>  Log Out
                             </a>
                         </li>
+                        <li class="">
+                            <a class="nav-link text-left active"  role="button"
+                               aria-haspopup="true" aria-expanded="false" href="{% url 'home' %}">
+                                <i class="flaticon-bar-chart-1"></i>  Home
+                            </a>
+                        </li>
+                        <li class="">
+                            <a class="nav-link text-left active"  role="button"
+                               aria-haspopup="true" aria-expanded="false" href="{% url 'users:logout' %}">
+                                <i class="flaticon-bar-chart-1"></i>  Log Out
+                            </a>
+                        </li>
                     </ul>
                 {% else %}
                     <ul class="navbar-nav align-self-stretch">
@@ -139,6 +151,12 @@
                             <a class="nav-link text-left active"  role="button"
                                aria-haspopup="true" aria-expanded="false" href="{% url 'base:change_password' %}">
                                 <i class="flaticon-bar-chart-1"></i>  Change Password
+                            </a>
+                        </li>
+                        <li class="">
+                            <a class="nav-link text-left active"  role="button"
+                               aria-haspopup="true" aria-expanded="false" href="{% url 'home' %}">
+                                <i class="flaticon-bar-chart-1"></i>  Home
                             </a>
                         </li>
                         <li class="">

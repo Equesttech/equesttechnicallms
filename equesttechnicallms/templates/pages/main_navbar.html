@@ -45,7 +45,9 @@
               <li class="nav-item px-2"><a class="nav-link" aria-current="page" href=" {% url 'blog:bloghome' %} ">Blog</a></li>
               <li class="nav-item px-2"><a class="nav-link" aria-current="page" href=" {% url 'videos:videohome' %} ">Videos</a></li>
                 {% if user.is_authenticated %}
-            </ul><a class="btn btn-primary order-1 order-lg-0" href=" {% url 'users:logout' %} ">Logout</a>
+            </ul><a class="btn btn-primary order-1 order-lg-0" href=" {% url 'base:dashboard' %} ">Dashoard</a>
+            </ul><a class="btn btn-primary order-1 order-lg-0" style="margin-left: 5px;" href=" {% url 'room-index' %} ">Rooms</a>
+            </ul><a class="btn btn-primary order-1 order-lg-0" style="margin-left: 5px;" href=" {% url 'users:logout' %} ">Logout</a>
                 {% else %}
             </ul><a class="btn btn-primary order-1 order-lg-0" href=" {% url 'users:register' %} ">Sign Up</a>
             </ul><a class="btn btn-primary order-1 order-lg-0" style="margin-left: 5px;" href=" {% url 'users:login' %} ">Login</a>

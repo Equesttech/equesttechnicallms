@@ -66,6 +66,7 @@ SECURE_HSTS_PRELOAD = env.bool("DJANGO_SECURE_HSTS_PRELOAD", default=True)
 SECURE_CONTENT_TYPE_NOSNIFF = env.bool(
     "DJANGO_SECURE_CONTENT_TYPE_NOSNIFF", default=True
 )
+MIDDLEWARE += ["whitenoise.middleware.WhiteNoiseMiddleware"]
 
 # MEDIA
 # ------------------------------------------------------------------------------

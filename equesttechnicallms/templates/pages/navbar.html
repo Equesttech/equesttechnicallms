@@ -2,7 +2,7 @@
 <header class="header header--loggedIn">
     <div class="container">
         <a href="{% url 'room-index' %}" class="header__logo">
-            <img src="{% static 'assets/img/favicons/favicon.ico' %}" />
+            <img src="{% static 'img/brand/4.png' %}" />
             <h1>Equesttech</h1>
         </a>
         <form class="header__search" method="GET" action="{% url 'room-index' %}">
@@ -23,10 +23,16 @@
             {% if request.user.is_authenticated %}
             <div class="header__user">
                 <a href="{% url 'update-user' %}">
+                    {% if request.user.avatar.url %}
                     <div class="avatar avatar--medium active">
                         <img src="{{request.user.avatar.url}}" />
                     </div>
-                    <p>{{request.user.username}} <span>@{{request.user.username}}</span></p>
+                        {% else %}
+                    <div class="avatar avatar--medium active">
+                        <img src="{% static 'img/brand/4.png' %}" />
+                    </div>
+                        {% endif %}
+                    <p>{{request.user.get_full_name}} <span>@{{request.user.username}}</span></p>
                 </a>
                 <button class="dropdown-button">
                     <svg version="1.1" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32">
