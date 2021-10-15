@@ -18,7 +18,6 @@ COURSE_LEVEL = (
 
 class CourseCategories(models.Model):
     name = models.CharField(max_length=50, default=None)
-    level = models.CharField(max_length=20, choices=COURSE_LEVEL, default=COURSE_LEVEL[0][0])
 
     def __str__(self):
         return self.name
@@ -27,6 +26,9 @@ class CourseCategories(models.Model):
 class Courses(models.Model):
     category = models.ForeignKey(CourseCategories, on_delete=models.CASCADE)
     name = models.CharField(max_length=50)
+    level = models.CharField(max_length=20, choices=COURSE_LEVEL, default=COURSE_LEVEL[0][0])
+    cover_image = models.ImageField(upload_to='courses/cover_images/',
+                                    default='equesttechnicallms/static/img/brand/favicon.png')
     logo = models.ImageField(upload_to='courses/logo/', default='equesttechnicallms/static/img/brand/favicon.png')
 
 
