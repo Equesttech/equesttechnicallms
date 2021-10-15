@@ -9,9 +9,16 @@ GENDER_CHOICES = (
     ('Female', 'Female')
 )
 
+COURSE_LEVEL = (
+    ('Beginner', 'Beginner'),
+    ('Intermediate', 'Intermediate'),
+    ('Advanced', 'Advanced')
+)
+
 
 class CourseCategories(models.Model):
     name = models.CharField(max_length=50, default=None)
+    level = models.CharField(max_length=20, choices=COURSE_LEVEL, default=COURSE_LEVEL[0][0])
 
     def __str__(self):
         return self.name
@@ -21,6 +28,8 @@ class Courses(models.Model):
     category = models.ForeignKey(CourseCategories, on_delete=models.CASCADE)
     name = models.CharField(max_length=50)
     logo = models.ImageField(upload_to='courses/logo/', default='equesttechnicallms/static/img/brand/favicon.png')
+
+
 
     def __str__(self):
         return self.name
