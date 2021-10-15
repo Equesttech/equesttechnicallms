@@ -1,18 +1,31 @@
+from django.core.management.utils import get_random_secret_key
+
 from .base import *  # noqa
 from .base import env
 
 # GENERAL
 # ------------------------------------------------------------------------------
 # https://docs.djangoproject.com/en/dev/ref/settings/#secret-key
-SECRET_KEY = os.getenv("DJANGO_SECRET_KEY")
+SECRET_KEY = os.getenv("DJANGO_SECRET_KEY", get_random_secret_key())
 # https://docs.djangoproject.com/en/dev/ref/settings/#allowed-hosts
 ALLOWED_HOSTS = ['equesttech-lms-qncmq.ondigitalocean.app', "equesttech.ng", "www.equesttech.ng"]
 
 # DATABASES
 # ------------------------------------------------------------------------------
-DATABASES["default"] = os.getenv("DATABASE_URL")  # noqa F405
-DATABASES["default"]["ATOMIC_REQUESTS"] = True  # noqa F405
-DATABASES["default"]["CONN_MAX_AGE"] = env.int("CONN_MAX_AGE", default=60)  # noqa F405
+if os.getenv("DATABASE_URL", "") != "":
+    r = urlparse(os.environ.get("DATABASE_URL"))
+    DATABASES = {
+        'default': {
+            'ENGINE': 'django.db.backends.postgresql_psycopg2',
+            'NAME': os.path.relpath(r.path, "/"),
+            'USER': r.username,
+            'HOST': r.hostname,
+            'PASSWORD': r.password,
+            'PORT': r.port,
+            'OPTIONS': {'sslmode': 'require'},
+        }
+    }
+
 
 # CACHES
 # ------------------------------------------------------------------------------
