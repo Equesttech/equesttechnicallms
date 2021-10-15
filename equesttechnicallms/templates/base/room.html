@@ -62,7 +62,7 @@
               <div class="avatar avatar--small">
                 <img src="{{room.host.avatar.url}}" />
               </div>
-              <span>@{{room.host.username}}</span>
+              <span>@{{room.host.get_full_name}}</span>
             </a>
           </div>
           <!-- <div class="room__details">
@@ -131,8 +131,8 @@
             <img src="{{user.avatar.url}}" />
           </div>
           <p>
-            {{user.name}}
-            <span>@{{user.username}}</span>
+            {{user.get_full_name}}
+            <span>@{{user.email}}</span>
           </p>
         </a>
         {% endfor %}
