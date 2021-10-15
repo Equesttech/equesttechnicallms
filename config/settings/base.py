@@ -2,8 +2,10 @@
 Base settings to build other settings files upon.
 """
 from pathlib import Path
+from urllib.parse import urlparse
 
 import environ
+import os
 
 ROOT_DIR = Path(__file__).resolve(strict=True).parent.parent.parent
 # equesttechnicallms/
@@ -41,10 +43,28 @@ LOCALE_PATHS = [str(ROOT_DIR / "locale")]
 # ------------------------------------------------------------------------------
 # https://docs.djangoproject.com/en/dev/ref/settings/#databases
 
-DATABASES = {
-    "default": env.db("DATABASE_URL", default="postgres:///equesttechnicallms"),
-}
+if os.getenv("DATABASE_URL", "") != "":
+    r = urlparse(os.environ.get("DATABASE_URL"))
+    DATABASES = {
+        'default': {
+            'ENGINE': 'django.db.backends.postgresql_psycopg2',
+            'NAME': os.path.relpath(r.path, "/"),
+            'USER': r.username,
+            'HOST': r.hostname,
+            'PASSWORD': r.password,
+            'PORT': r.port,
+            'OPTIONS': {'sslmode': 'require'},
+        }
+    }
+else:
+    DATABASES = {
+        'default': {
+            'ENGINE': 'django.db.backends.sqlite3',
+            'NAME': os.path.join(ROOT_DIR, 'db.sqlite3'),
+        }
+    }
 DATABASES["default"]["ATOMIC_REQUESTS"] = True
+
 
 # URLS
 # ------------------------------------------------------------------------------
@@ -71,10 +91,17 @@ THIRD_PARTY_APPS = [
     "allauth",
     "allauth.account",
     "allauth.socialaccount",
+    'django_summernote',
+    # 'django_forms_bootstrap',
+    'bootstrap4',
 ]
 
 LOCAL_APPS = [
     "equesttechnicallms.users.apps.UsersConfig",
+    'blog',
+    'base',
+    'rooms',
+    'videos',
     # Your stuff: custom apps go here
 ]
 # https://docs.djangoproject.com/en/dev/ref/settings/#installed-apps
@@ -97,7 +124,7 @@ AUTH_USER_MODEL = "users.User"
 # https://docs.djangoproject.com/en/dev/ref/settings/#login-redirect-url
 LOGIN_REDIRECT_URL = "users:redirect"
 # https://docs.djangoproject.com/en/dev/ref/settings/#login-url
-LOGIN_URL = "account_login"
+LOGIN_URL = "users:login"
 
 # PASSWORDS
 # ------------------------------------------------------------------------------
@@ -207,7 +234,7 @@ CSRF_COOKIE_HTTPONLY = True
 # https://docs.djangoproject.com/en/dev/ref/settings/#secure-browser-xss-filter
 SECURE_BROWSER_XSS_FILTER = True
 # https://docs.djangoproject.com/en/dev/ref/settings/#x-frame-options
-X_FRAME_OPTIONS = "DENY"
+X_FRAME_OPTIONS = "SAMEORIGIN"
 
 # EMAIL
 # ------------------------------------------------------------------------------
@@ -257,7 +284,7 @@ LOGGING = {
 # ------------------------------------------------------------------------------
 ACCOUNT_ALLOW_REGISTRATION = env.bool("DJANGO_ACCOUNT_ALLOW_REGISTRATION", True)
 # https://django-allauth.readthedocs.io/en/latest/configuration.html
-ACCOUNT_AUTHENTICATION_METHOD = "username"
+ACCOUNT_AUTHENTICATION_METHOD = "email"
 # https://django-allauth.readthedocs.io/en/latest/configuration.html
 ACCOUNT_EMAIL_REQUIRED = True
 # https://django-allauth.readthedocs.io/en/latest/configuration.html

@@ -1,19 +1,27 @@
-from django.contrib.auth import forms as admin_forms
+from django.contrib.auth import forms
 from django.contrib.auth import get_user_model
-from django.utils.translation import gettext_lazy as _
+from django.forms.models import ModelForm
 
 User = get_user_model()
 
 
-class UserChangeForm(admin_forms.UserChangeForm):
-    class Meta(admin_forms.UserChangeForm.Meta):
+class UserChangeForm(forms.UserChangeForm):
+    class Meta(forms.UserChangeForm.Meta):
         model = User
 
 
-class UserCreationForm(admin_forms.UserCreationForm):
-    class Meta(admin_forms.UserCreationForm.Meta):
+# User Login Form (Applied in both student and instructor login)
+class MyUserCreationForm(forms.UserCreationForm):
+    class Meta:
         model = User
+        fields = ['first_name', 'last_name', 'username', 'email', 'password1', 'password2']
 
         error_messages = {
-            "username": {"unique": _("This username has already been taken.")}
+            "username": {"unique": ("This username has already been taken.")}
         }
+
+
+class UserForm(ModelForm):
+    class Meta:
+        model = User
+        fields = ['avatar', 'first_name', 'last_name', 'username', 'email', 'bio']
