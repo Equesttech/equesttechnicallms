@@ -5,6 +5,7 @@ from django.contrib.auth.decorators import login_required
 from django.db.models import Q
 from django.contrib.auth import authenticate, login, logout
 
+from equesttechnicallms.users.forms import UserForm
 from rooms.forms import RoomForm
 from .models import Room, Topic, Message, User
 
