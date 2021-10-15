@@ -127,6 +127,5 @@ django-qa
 django-summernote==0.8.11.6
 django-taggit==0.22.2
 gunicorn==20.0.4
-idna==2.10
 Markdown==3.2.2
 material==0.1
