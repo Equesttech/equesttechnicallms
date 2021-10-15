@@ -68,12 +68,14 @@ target/
 .venv
 venv/
 ENV/
+env/
+.env
 
 # Rope project settings
 .ropeproject
 
 # mkdocs documentation
-/site
+!/sites
 
 # mypy
 .mypy_cache/
@@ -270,8 +272,17 @@ tags
 
 ### Project template
 
-equesttechnicallms/media/
+feron/media/*
 
 .pytest_cache/
 
+# sqlite3 stuff
+*.db
+db.sqlite3
 
+local.py
+db.sqlite3-journal
+.idea
+.idea/*
+migrations
+.vscode
