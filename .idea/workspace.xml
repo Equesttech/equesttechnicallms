@@ -1,7 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="551e54ab-cfd3-476e-9b71-73cf3bf41a59" name="Default Changelist" comment="" />
+    <list default="true" id="551e54ab-cfd3-476e-9b71-73cf3bf41a59" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/8403c7ca-f61f-4049-ba01-c2bcc91e1e61.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/8403c7ca-f61f-4049-ba01-c2bcc91e1e61.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/equesttechnicallms/templates/base/update-user.html" beforeDir="false" afterPath="$PROJECT_DIR$/equesttechnicallms/templates/base/update-user.html" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -50,11 +54,15 @@
       </list>
     </option>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="ProjectId" id="1zSYzo2RV5YD2Do0UXrNTJnP8pc" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="PropertiesComponent">
     <property name="DatabaseDriversLRU" value="sqlite" />
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/videos" />
     <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
@@ -112,11 +120,28 @@
       <option name="presentableId" value="Default" />
       <updated>1634143220595</updated>
       <workItem from="1634143223487" duration="85779000" />
+      <workItem from="1634428903170" duration="548000" />
+      <workItem from="1634512326213" duration="4499000" />
+      <workItem from="1634758767391" duration="1907000" />
+      <workItem from="1634767563097" duration="1125000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="VcsManagerConfiguration">
     <ignored-roots>
