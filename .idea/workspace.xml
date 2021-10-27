@@ -2,7 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="551e54ab-cfd3-476e-9b71-73cf3bf41a59" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/equesttechnicallms/templates/base/profile.html" beforeDir="false" afterPath="$PROJECT_DIR$/equesttechnicallms/templates/base/profile.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/settings/base.py" beforeDir="false" afterPath="$PROJECT_DIR$/config/settings/base.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -121,7 +122,9 @@
       <workItem from="1634428903170" duration="548000" />
       <workItem from="1634512326213" duration="4499000" />
       <workItem from="1634758767391" duration="1907000" />
-      <workItem from="1634767563097" duration="1845000" />
+      <workItem from="1634767563097" duration="2447000" />
+      <workItem from="1634846138590" duration="552000" />
+      <workItem from="1635366384697" duration="511000" />
     </task>
     <task id="LOCAL-00001" summary="initial">
       <created>1634768771504</created>
@@ -130,7 +133,14 @@
       <option name="project" value="LOCAL" />
       <updated>1634768771504</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="initial">
+      <created>1634769452281</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1634769452281</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
