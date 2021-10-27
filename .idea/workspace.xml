@@ -3,6 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="551e54ab-cfd3-476e-9b71-73cf3bf41a59" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/blog/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/settings/production.py" beforeDir="false" afterPath="$PROJECT_DIR$/config/settings/production.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -62,21 +64,21 @@
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/equesttechnicallms/media/blog_images" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/videos" />
     <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\VICTOR ISAAC\PycharmProjects\equesttechnicallms\equesttechnicallms\templates" />
-      <recent name="C:\Users\VICTOR ISAAC\PycharmProjects\equesttechnicallms" />
-      <recent name="C:\Users\VICTOR ISAAC\PycharmProjects\equesttechnicallms\equesttechnicallms" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\VICTOR ISAAC\PycharmProjects\equesttechnicallms\equesttechnicallms\media\blog_images" />
       <recent name="C:\Users\VICTOR ISAAC\PycharmProjects\equesttechnicallms\videos" />
       <recent name="C:\Users\VICTOR ISAAC\PycharmProjects\equesttechnicallms\equesttechnicallms\templates\videos" />
       <recent name="C:\Users\VICTOR ISAAC\PycharmProjects\equesttechnicallms\equesttechnicallms\templates\blog" />
       <recent name="C:\Users\VICTOR ISAAC\PycharmProjects\equesttechnicallms\equesttechnicallms\static" />
-      <recent name="C:\Users\VICTOR ISAAC\PycharmProjects\equesttechnicallms\equesttechnicallms\static\assets\img\gallery" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\VICTOR ISAAC\PycharmProjects\equesttechnicallms\equesttechnicallms\templates" />
+      <recent name="C:\Users\VICTOR ISAAC\PycharmProjects\equesttechnicallms" />
+      <recent name="C:\Users\VICTOR ISAAC\PycharmProjects\equesttechnicallms\equesttechnicallms" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -123,6 +125,7 @@
       <workItem from="1634758767391" duration="1907000" />
       <workItem from="1634767563097" duration="2447000" />
       <workItem from="1634846138590" duration="552000" />
+      <workItem from="1635366384697" duration="4145000" />
     </task>
     <task id="LOCAL-00001" summary="initial">
       <created>1634768771504</created>
@@ -138,7 +141,21 @@
       <option name="project" value="LOCAL" />
       <updated>1634769452281</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="initial">
+      <created>1635367011874</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1635367011874</updated>
+    </task>
+    <task id="LOCAL-00004" summary="initial">
+      <created>1635368908346</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1635368908346</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
