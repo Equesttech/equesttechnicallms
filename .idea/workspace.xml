@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="551e54ab-cfd3-476e-9b71-73cf3bf41a59" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/settings/base.py" beforeDir="false" afterPath="$PROJECT_DIR$/config/settings/base.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -63,7 +62,7 @@
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/videos" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/equesttechnicallms/media/blog_images" />
     <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
   </component>
   <component name="RecentsManager">
@@ -124,7 +123,6 @@
       <workItem from="1634758767391" duration="1907000" />
       <workItem from="1634767563097" duration="2447000" />
       <workItem from="1634846138590" duration="552000" />
-      <workItem from="1635366384697" duration="511000" />
     </task>
     <task id="LOCAL-00001" summary="initial">
       <created>1634768771504</created>

@@ -13,7 +13,7 @@ STATUS = (
 
 class BlogPost(models.Model):
     category = models.ForeignKey(CourseCategories, verbose_name="Category", default=1, on_delete=models.CASCADE)
-    cover = models.ImageField(upload_to='blog_images/', blank=True, default='blog_images/defaultblog.jpg')
+    cover = models.ImageField(upload_to='blog_images/', blank=True, default='blog_images/defaultblog.png')
     # author_position = models.CharField(max_length=50)
     # author_bio = models.TextField(max_length=200, unique=True)
     title = models.CharField(max_length=200, unique=True, verbose_name="Title")
