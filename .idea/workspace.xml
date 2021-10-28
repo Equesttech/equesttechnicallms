@@ -2,7 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="551e54ab-cfd3-476e-9b71-73cf3bf41a59" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/config/settings/production.py" beforeDir="false" afterPath="$PROJECT_DIR$/config/settings/production.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/equesttechnicallms/templates/blog/blog_index.html" beforeDir="false" afterPath="$PROJECT_DIR$/equesttechnicallms/templates/blog/blog_index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/equesttechnicallms/templates/pages/main_navbar.html" beforeDir="false" afterPath="$PROJECT_DIR$/equesttechnicallms/templates/pages/main_navbar.html" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -123,7 +125,7 @@
       <workItem from="1634758767391" duration="1907000" />
       <workItem from="1634767563097" duration="2447000" />
       <workItem from="1634846138590" duration="552000" />
-      <workItem from="1635366384697" duration="4784000" />
+      <workItem from="1635366384697" duration="6303000" />
     </task>
     <task id="LOCAL-00001" summary="initial">
       <created>1634768771504</created>
@@ -160,7 +162,14 @@
       <option name="project" value="LOCAL" />
       <updated>1635373893241</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="initial">
+      <created>1635375545384</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1635375545384</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
