@@ -5,9 +5,9 @@
 
  {% include 'pages/main_navbar.html' %}
 
-  
-      <!-- <section> begin
-
+      <!-- ============================================-->
+      <!-- <section> begin ============================-->
+      <section class="pb-11 pt-7 bg-600">
 
         <div class="container">
           <div class="row">
@@ -19,24 +19,26 @@
                   <label class="form-label" for="inputCategories">Categories</label>
                   <select class="form-select" id="inputCategories">
                     <option selected="selected">Web development</option>
-                    <option value="1">UX designer</option>
+                    <option value="1">Data Science</option>
+                    <option value="2">Data Analysis</option>
+                    <option value="3">Python Programming</option>
+                    <option value="4">Software Development</option>
                   </select>
                 </div>
                 <div class="col-sm-6 col-md-3">
                   <label class="form-label" for="inputLevel">Level</label>
                   <select class="form-select" id="inputLevel">
                     <option selected="selected">All Level</option>
-                    <option value="1">Level 1 </option>
-                    <option value="2">Level 2 </option>
-                    <option value="3">Level 3</option>
+                    <option value="1">Begineer </option>
+                    <option value="2">Intermediate </option>
+                    <option value="3">Advanced</option>
                   </select>
                 </div>
                 <div class="col-sm-6 col-md-3">
                   <label class="form-label" for="inputLanguage">Courses</label>
                   <select class="form-select" id="inputLanguage">
                     <option selected="selected">English</option>
-                    <option value="1">Bangla</option>
-                    <option value="2">Hindi</option>
+                    
                   </select>
                 </div>
                 <div class="col-sm-6 col-md-3">
@@ -52,9 +54,9 @@
             </div>
           </div>
         </div>
-  <!-- end of .container-->
+        <!-- end of .container-->
 
-    
+      </section>
       <!-- <section> close ============================-->
       <!-- ============================================-->
 
@@ -68,12 +70,28 @@
         <div class="container">
           <div class="row">
             <div class="col-md-4 mb-4">
-              <div class="card h-100"><img class="card-img-top w-100" src=" {% static 'assets/img/gallery/design.png' %} " alt="courses" />
+              <div class="card h-100"><img class="card-img-top w-100" src=" {% static 'assets/img/gallery/python.jpg' %} " alt="courses" height= 200 width=200/>
                 <div class="card-body">
                   <h5 class="font-sans-serif fw-bold fs-md-0 fs-lg-1">Python for Data Science</h5><a class="text-muted fs--1 stretched-link text-decoration-none" href=" {% static '#!' %} ">Advaned</a>
                 </div>
               </div>
             </div>
+            <div class="col-md-4 mb-4">
+              <div class="card h-100"><img class="card-img-top w-100" src=" {% static 'assets/img/gallery/data-analyst.jpg' %} " alt="courses" height=200 width=200/>
+                <div class="card-body">
+                  <h5 class="font-sans-serif fw-bold fs-md-0 fs-lg-1">Data Analyst</h5><a class="text-muted fs--1 stretched-link text-decoration-none" href=" {% static '#!' %} ">Advaned</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4 mb-4">
+              <div class="card h-100"><img class="card-img-top w-100" src=" {% static 'assets/img/gallery/data-science.png' %} " alt="courses" height=200 width=200/>
+                <div class="card-body">
+                  <h5 class="font-sans-serif fw-bold fs-md-0 fs-lg-1">Data Science</h5><a class="text-muted fs--1 stretched-link text-decoration-none" href=" {% static '#!' %} ">Advaned</a>
+                </div>
+              </div>
+            </div>
+
+
           </div>
         </div>
         <!-- end of .container-->
