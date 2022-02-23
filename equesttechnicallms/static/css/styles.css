@@ -96,10 +96,10 @@ display: inline-block;
 
 /* https://www.w3schools.com/howto/howto_css_image_responsive.asp */
 .img-responsive {
-    text-align: center; 
+    text-align: center;
     width: 100%;
     height: auto;
-    max-width: 400px;     /* NEED for proper size */ 
+    max-width: 400px;     /* NEED for proper size */
     max-height: 400px;
     display: block;
     margin: auto;         /* NEED for positioning */

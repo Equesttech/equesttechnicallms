@@ -20,7 +20,7 @@ function saveQn(icon) {
         console.log(text);
         // Remove old class, add opposite class (DO NOT GET MIXED UP! 's' is for solid)
         if (text === "Saved") {
-            icon.classList.remove('far');        
+            icon.classList.remove('far');
             icon.classList.add('fas');
         } else {
             icon.classList.remove('fas');
